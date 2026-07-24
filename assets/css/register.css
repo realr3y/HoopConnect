@@ -22,6 +22,8 @@ body {
 
     justify-content: center;
 
+    align-items: center;
+
     border-radius: 30px;
 
     overflow: hidden;
@@ -32,8 +34,40 @@ body {
 }
 
 .account-type-card {
-    width: 200px;
-    height: 200px;
+    display: flex;
+    align-items: center;
 
-    background: black;
+    width: 600px;
+    height: 130px;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    background: #f7f7f7;
+
+    border-radius: 30px;
+
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: #362b27;
+
+    margin-bottom: 25px;
+}
+
+.account-type-logo {
+    width: 70px;
+    height: 70px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-type-logo img{
+    height: 120%;
+    width: 120%;
+
+    object-fit: contain;
 }
