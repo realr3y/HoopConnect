@@ -6,8 +6,8 @@ body {
     height: 100vh;
     background: linear-gradient(
         to bottom,
-        #d2622e 50%,
-        #fab56c 50%
+        #d2622e,
+        #fab56c
     );
     font-family: Arial;
 }
@@ -84,7 +84,6 @@ body {
 
     display:flex;
 
-    flex-direction:column;
 
     justify-content:center;
 

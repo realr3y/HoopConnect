@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #d2622e,
+        #fab56c
+    );
+    font-family: Arial;
+}
+
+.register-card {
+    width: 950px;
+    height: 520px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background: white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+.account-type-card {
+    width: 200px;
+    height: 200px;
+
+    background: black;
+}
