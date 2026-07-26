@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #d2622e,
+        #fab56c
+    );
+    font-family: Arial;
+}
+
+.register-card {
+    width: 950px;
+    height: 520px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background: white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+h1 {
+    font-size: 20px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.progress-container{
+    align-self: stretch;
+    display:flex;
+    align-items:center;
+    padding: 20px 60px 0;
+    box-sizing: border-box;
+    margin:20px 0 35px;
+}
+
+.progress-circle{
+    width:25px;
+    height:25px;
+
+    border-radius:50%;
+
+    border:3px solid #d2622e;
+
+    background:white;
+
+    color:#d2622e;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:bold;
+}
+
+.progress-circle.active{
+    background:#d2622e;
+    color:white;
+}
+
+.progress-line{
+    flex: 1;
+    height:3px;
+
+    background:#d9d9d9;
+}
+
+.progress-line.active{
+    background:#d2622e;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.field-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    
+    align-self: stretch;
+
+    padding: 0 60px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.field-container input, 
+.field-container select {
+    width: 100%;
+
+    padding:14px;
+
+    margin-top: 0px;
+    margin-bottom:0px;
+
+    border: 2px solid #7c7b79;
+
+    background:#ffffff;
+
+    border-radius: 10px;
+
+    box-sizing:border-box;
+}
+
+.field-container input:focus, 
+.field-container select:focus {
+    outline: none;
+    border-color: #7c7b79;
+    box-shadow: 0 0 2px 4px rgba(124, 123, 121, 0.10);
+}
+
+.button-container {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 60px 30px;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+.button-container button {
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#362b27;
+
+    color:white;
+
+    font-size:16px;
+    margin-bottom: 15px;
+}
+
+input::placeholder,
+select::placeholder {
+    opacity: 0;
+}
+
+.form-group {
+    --pad: .75rem;
+    --accent: #888;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    position: absolute;
+    left: var(--pad);
+    top: var(--pad);
+    pointer-events: none;
+    transition: top 0.2s ease, transform 0.2s ease, color 0.2s ease, background 0.2s ease;
+    color: #888;
+    transform-origin: left top;
+    font-size: 14px;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.8);
+    color: var(--accent);
+    background: white;
+    padding: 0 4px;
+}
+
+select:focus + label,
+select:not(:invalid) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.8);
+    color: var(--accent);
+    background: white;
+    padding: 0 4px;
+}

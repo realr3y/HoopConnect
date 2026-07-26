@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #d2622e,
+        #fab56c
+    );
+    font-family: Arial;
+}
+
+.register-card {
+    width: 950px;
+    height: 520px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background: white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+.account-type-card {
+    display: flex;
+    align-items: center;
+
+    width: 600px;
+    height: 130px;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    background: #f7f7f7;
+
+    border-radius: 30px;
+
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: #362b27;
+
+    margin-bottom: 25px;
+}
+
+.account-type-logo {
+    width: 70px;
+    height: 70px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-type-logo img{
+    height: 120%;
+    width: 120%;
+
+    object-fit: contain;
+}
